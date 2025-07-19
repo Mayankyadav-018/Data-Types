@@ -2,36 +2,7 @@ Expt 2 - C++ Program Structure (Data Types)
 
 Aim: To studyand implementC++ Program Structure (Data Types)
 Theory:
-C++ Data Types
-Primitive Built-in Types
-Type	Keyword
-Boolean	bool
-Character	char
-Integer	int
-Floating point	float
-Double floating point	double
-Valueless	void
-Wide character	wchar_t
 
-Type	Typical Bit Width	Typical Range
-char	1byte	-127 to 127 or 0 to 255
-unsigned char	1byte	0 to 255
-signed char	1byte	-127 to 127
-int	4bytes	-2147483648 to 2147483647
-unsigned int	4bytes	0 to 4294967295
-signed int	4bytes	-2147483648 to 2147483647
-short int	2bytes	-32768 to 32767
-unsigned short int	2bytes	0 to 65,535
-signed short int	2bytes	-32768 to 32767
-long int	8bytes	-9223372036854775808 to 9223372036854775807
-signed long int	8bytes	same as long int
-unsigned long int	8bytes	0 to 18446744073709551615
-long long int	8bytes	-(2^63) to (2^63)-1
-unsigned long long int	8bytes	0 to 18,446,744,073,709,551,615
-float	4bytes	
-double	8bytes	
-long double	12bytes	
-wchar_t	2 or 4 bytes	1 wide character
 
 
 Variable Definition in C++
@@ -75,6 +46,41 @@ Therefore, making local variables static allows them to maintain their values be
 The extern Storage Class:
 The extern storage class is used to give a reference of a global variable that is visible to ALL the program files. 
 When you use 'extern' the variable cannot be initialized as all it does is point the variable name at a storage location that has been previously defined.
+
+Algorithm: Display Data Types and Their Sizes in C++
+Start
+
+1- Declare an integer variable a
+  Prompt the user to enter an integer.
+  Store the input in variable a.
+  Display the value of a and its size using sizeof().
+
+2- Declare a float variable b
+  Prompt the user to enter a decimal number.
+  Store the input in variable b.
+  Display the value of b and its size.
+
+3- Declare a double variable d
+  Prompt the user to enter a number.
+  Store the input in variable d.
+  Display the value of d and its size.
+
+4- Declare a char variable c
+  Prompt the user to enter a character.
+  Store the input in variable c.
+  Display the value of c and its size.
+
+5- Declare a string variable s
+  Prompt the user to enter a string (single word).
+  Store the input in variable s.
+  Display the value of s and the size of the string object (note: this shows the object size, not length).
+
+6- Declare two boolean variables
+  Assign true to printTrue and false to printFalse.
+  Display the value of printTrue.
+  Display the size of bool using sizeof(printTrue).
+
+End
 
 Conclusion:
 In this experiment, we learned about various data types in C++, such as int, float, char, double, and bool. We understood their sizes, usage, and how they store different types of values.
