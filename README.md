@@ -1,88 +1,62 @@
-Expt 2 - C++ Program Structure (Data Types)
+# EXPERIMENT - 02
 
-Aim: To studyand implementC++ Program Structure (Data Types)
-Theory:
+* Aim: To understand and explore the various data types available in C++ and how they are used to store different types of values.
+  
+* Tools Used - IDE, Basic data types, header files.
+
+* Theory: In C++, data types define the type and size of data that a variable can hold. Choosing the correct data type is essential for efficient memory usage and accurate program behavior. C++ provides a variety of data types, which are broadly categorized into:
+
+🔹 1. Primary (Built-in) Data Types in C++:
+
+int – A data type used to store integer (whole) numbers.
+🔸 Example: int a = 10;
+
+float – Used to store decimal numbers with single precision.
+🔸 Example: float pi = 3.14;
+
+double – Stores decimal numbers with double precision (more accurate than float).
+🔸 Example: double rate = 5.6789;
+
+char – Used to store a single character, enclosed in single quotes.
+🔸 Example: char grade = 'A';
+
+bool – Represents Boolean values, either true or false.
+🔸 Example: bool status = true;
+
+void – Indicates no return value, mostly used for functions that don’t return anything.
+🔸 Example: void display();
+
+🔹 2. Type Modifiers:
+
+Modifiers alter the size or range of the basic data types:
+
+-signed, unsigned
+
+-short, long
 
 
+# Display Data Types and Their Sizes in C++
 
-Variable Definition in C++
-type variable_list;
-type variable_name = value;
+This C++ program demonstrates how to declare different data types—int, float, double, char, string, and bool—and display both their values and memory sizes using the sizeof() function. It helps in understanding the storage requirements of various data types in C++.
 
-example:
-int    i, j, k;
-char   c, ch;
-float  f, salary;
-double d;
+ALGORITHM:
 
-extern int d = 3, f = 5;    // declaration of d and f. 
-int d = 3, f = 5;           // definition and initializing d and f. 
-byte z = 22;                // definition and initializes z. 
-char x = 'x';               // the variable x has the value 'x'.
+1> Start
 
-Storage Classes in C++
-A storage class defines the scope (visibility) and life-time of variables and/or functions within a C++ Program. These specifiers precede the type that they modify. There are following storage classes, which can be used in a C++ Program
-•	auto
-•	register
-•	static
-•	extern
-•	mutable
-The auto Storage Class
-The auto storage class is the default storage class for all local variables.
-{
-   int mount;
-   auto int month;
-}
+2> Declare an int variable, take input, and display its value and size
 
-The register Storage Class
-The register storage class is used to define local variables that should be stored in a register instead of RAM. This means that the variable has a maximum size equal to the register size (usually one word) and can't have the unary '&' operator applied to it (as it does not have a memory location).
-{
-   register int  miles;
-}
-The static Storage Class:
-The static storage class instructs the compiler to keep a local variable in existence during the life-time of the program instead of creating and destroying it each time it comes into and goes out of scope.
-Therefore, making local variables static allows them to maintain their values between function calls.
+3> Declare a float variable, take input, and display its value and size
 
-The extern Storage Class:
-The extern storage class is used to give a reference of a global variable that is visible to ALL the program files. 
-When you use 'extern' the variable cannot be initialized as all it does is point the variable name at a storage location that has been previously defined.
+4> Declare a double variable, take input, and display its value and size
 
-Algorithm: Display Data Types and Their Sizes in C++
-Start
+5> Declare a char variable, take input, and display its value and size
 
-1- Declare an integer variable a
-  Prompt the user to enter an integer.
-  Store the input in variable a.
-  Display the value of a and its size using sizeof().
+6> Declare a string variable, take input, and display its value and object size
 
-2- Declare a float variable b
-  Prompt the user to enter a decimal number.
-  Store the input in variable b.
-  Display the value of b and its size.
+7> Declare two bool variables (true, false) and display value and size
 
-3- Declare a double variable d
-  Prompt the user to enter a number.
-  Store the input in variable d.
-  Display the value of d and its size.
+8> End
 
-4- Declare a char variable c
-  Prompt the user to enter a character.
-  Store the input in variable c.
-  Display the value of c and its size.
-
-5- Declare a string variable s
-  Prompt the user to enter a string (single word).
-  Store the input in variable s.
-  Display the value of s and the size of the string object (note: this shows the object size, not length).
-
-6- Declare two boolean variables
-  Assign true to printTrue and false to printFalse.
-  Display the value of printTrue.
-  Display the size of bool using sizeof(printTrue).
-
-End
-
-Conclusion:
-In this experiment, we learned about various data types in C++, such as int, float, char, double, and bool. We understood their sizes, usage, and how they store different types of values.
-By writing simple programs, we observed how data types help in declaring variables correctly.
-This experiment gave us a strong foundation for handling data efficiently in C++.
+* Conclusion:
+  
+In this experiment, we learned about various data types in C++, such as int, float, char, double, and bool. We understood their sizes, usage, and how they store different types of values.By writing simple programs, we observed how data types help in declaring variables correctly.This experiment gave us a strong foundation for handling data efficiently in C++.
